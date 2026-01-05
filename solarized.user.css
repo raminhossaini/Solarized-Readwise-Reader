@@ -1,0 +1,37 @@
+/* ==UserStyle==
+@name           Solarized (light) for Readwise Reader
+@namespace      github.com/openstyles/stylus
+@version        1.0.0
+@description    A sepia style for Readwise Reader - ramin-hossaini.com
+@author         Ramin Hossaini
+==/UserStyle== */
+
+@-moz-document domain("read.readwise.io") {
+    
+    html:root.theme--light *{
+        --reading-background-color: #f2ebe1;
+        --sidebar-background-color: #ece5d9;
+        --button:#d2cbb9;
+        --scrollbar-background: #ece5d9;
+        --scrollbar-color: #c7bba9;
+        --hover: #FFD297;
+        --hover-secondary: #d2cbb9;
+        --text-interactive-color: #3d7690;
+        --card-background: #f7f1e9;
+        --card-background-hover: #f1ebe2;
+        --accent: #3d7690;
+            
+        --content-background-color: var(--reading-background-color) !important;
+        --sidebar-background: var(--sidebar-background-color) !important;
+        --default-blurred-button-background: var(--button) !important;
+        --u-alpha-100: var(--hover) !important;
+        --u-alpha-200: var(--hover-secondary) !important;
+        --text-interactive: var(--text-interactive-color) !important;
+        --inbox-sidebar-background: var(--sidebar-background-color) !important;
+        --background-color: var(--reading-background-color) !important;
+        --document-card-background: var(--card-background) !important;
+        --document-card-background--hover: var(--card-background-hover) !important;
+        
+        scrollbar-color: var(--scrollbar-color) var(--scrollbar-background)  !important;
+    }
+}
